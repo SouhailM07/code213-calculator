@@ -1,8 +1,9 @@
 import "./btn.css";
-export default function Btn({ action, content }) {
+export default function Btn({ action, content, id }) {
   return (
     <>
       <button
+        id={id}
         onClick={() => {
           action();
         }}

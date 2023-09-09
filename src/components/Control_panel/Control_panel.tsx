@@ -3,7 +3,7 @@ export default function Control_panel() {
   return (
     <div
       id="control-panel"
-      className="border-2 border-black flex justify-between items-center h-[6rem]"
+      className="border-2 border-black flex justify-between items-center h-[4rem]"
     >
       <h2>calc</h2>
       <div

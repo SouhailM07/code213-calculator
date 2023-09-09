@@ -4,11 +4,14 @@ import { Btn } from "../../components";
 export default function Btn_panel(props) {
   return (
     <>
-      <div className="border-2 border-black flex flex-wrap justify-evenly ">
+      <div
+        id="btn_panel"
+        className="border-2 border-black flex flex-wrap justify-evenly "
+      >
         <Btn content="7" action={props.send} />
         <Btn content="8" />
         <Btn content="9" />
-        <Btn content="DEL" />
+        <Btn content="DEL" id="delBtn" />
         <Btn content="4" />
         <Btn content="5" />
         <Btn content="6" />
@@ -21,8 +24,8 @@ export default function Btn_panel(props) {
         <Btn content="0" />
         <Btn content="/" />
         <Btn content="x" />
-        <Btn content="RESET" />
-        <Btn content="=" />
+        <Btn content="RESET" id="resetBtn" />
+        <Btn content="=" id="equalBtn" />
       </div>
     </>
   );

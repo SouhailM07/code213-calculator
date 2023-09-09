@@ -1,0 +1,14 @@
+#btn_panel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  place-items: center;
+}
+#btn_panel #resetBtn {
+  grid-area: 5/1/5/3;
+  width: 84%;
+}
+#btn_panel #equalBtn {
+  width: 84%;
+  grid-area: 5/3/5/5;
+}
