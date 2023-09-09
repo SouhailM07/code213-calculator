@@ -6,9 +6,6 @@ body {
   height: 100vh;
   display: grid;
   place-items: center;
-  /* background-color: hsl(222, 26%, 31%); main body */
-  /* background-color: hsl(223, 31%, 20%); btn panel  */
-  /* background-color: hsl(224, 36%, 15%); screen*/
 }
 
 /*=======================================================================================*/
@@ -59,8 +56,30 @@ body {
   --textBtn-2: hsl(60, 10%, 19%);
   --textFunctionalBtn-2: hsl(0, 0%, 100%);
   --textEqualBtn-2: hsl(0, 0%, 100%);
+  /*=======================================================================================*/
+  /* theme 3 */
+  /*=======================================================================================*/
+  /* !background */
+  --bodyColor-3: hsl(268, 75%, 9%);
+  --btnPanel-3: hsl(268, 71%, 12%);
+  --resultPanel-3: hsl(268, 71%, 12%);
+  /* ! Btn */
+  --operatorBtn-3: hsl(268, 47%, 21%);
+  --operatorBtn--shadow-3: hsl(290, 70%, 36%);
+  /* --operatorBtn--hover-3: ; */
+  --functionalBtn-3: hsl(281, 89%, 26%);
+  --functionalBtn--shadow-3: hsl(290, 70%, 36%);
+  --functionalBtn--hover-3: hsl(285, 91%, 52%);
+  --switchBtn-3: hsl(176, 100%, 44%);
+  --switchBtn--shadow-3: hsl(177, 92%, 70%);
+  /* --switchBtn--hover-3: ; */
+  /* ! text */
+  --text-3: hsl(52, 100%, 62%);
+  --textBtn-3: hsl(52, 100%, 62%);
+  --textFunctionalBtn-3: hsl(0, 0%, 100%);
+  --textEqualBtn-3: hsl(198, 20%, 13%);
 }
 body {
-  background-color: hsl(60, 10%, 19%);
+  background-color: hsl(198, 20%, 13%);
 }
 /*=======================================================================================*/
