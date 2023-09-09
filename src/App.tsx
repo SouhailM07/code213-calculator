@@ -8,18 +8,28 @@ import { useState } from "react";
 let body = document.body as HTMLBodyElement;
 function App() {
   let [counter, setCounter] = useState(1);
+  let [direction, setDirection] = useState(false);
   body.className = `bodyColor-${counter}`;
   return (
     <>
-      <div className="border-2 m-auto border-red-500 w-[40rem] flex flex-col justify-between h-[48rem]">
-        <Control_panel theme={counter} />
-        <Result_panel theme={counter} />
-        <Btn_panel
+      <div className=" w-[40rem] flex flex-col justify-between h-[46.5rem]">
+        <Control_panel
           theme={counter}
           send={() => {
-            setCounter(++counter);
+            if (counter == 1 && !direction) setCounter(++counter);
+            else if (counter == 2 && !direction) setCounter(++counter);
+            else if (counter == 3 && !direction) {
+              setCounter(--counter);
+              setDirection(!direction);
+            } else if (counter === 2 && direction) setCounter(--counter);
+            else if (counter === 1 && direction) {
+              setCounter(++counter);
+              setDirection(!direction);
+            }
           }}
         />
+        <Result_panel theme={counter} />
+        <Btn_panel theme={counter} />
       </div>
     </>
   );

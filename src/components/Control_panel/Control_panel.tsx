@@ -1,28 +1,34 @@
 import "./control_panel.css";
-export default function Control_panel({ theme }) {
+export default function Control_panel({ theme, send }) {
   return (
     <div
       id="control-panel"
-      className="border-2 border-black flex justify-between items-center h-[4rem]"
+      className=" flex justify-between items-center h-[4.2rem] "
     >
-      <h2 className={`text-${theme}`}>calc</h2>
+      <h2 className={`text-${theme} text-[2.3rem] pt-2 `}>calc</h2>
       <div
         id="control-panel__theme"
-        className="flex border-2 border-red-500 w-[10rem]  justify-between "
+        className="flex  w-[9.7rem]  justify-between "
       >
-        <h3 className={`text-${theme}`}>THEME</h3>
+        <h3 className={`text-${theme}  self-end `}>THEME</h3>
         <div className="flex flex-col items-center">
           <div
-            className={`flex justify-between text-[1.2rem] w-[3.7rem] text-${theme}`}
+            className={`flex justify-between text-[1rem] w-[3.7rem] text-${theme}`}
           >
-            <span className=" bg-yellow-500 inline-block">1</span>
-            <span className=" bg-yellow-500 inline-block">2</span>
-            <span className=" bg-yellow-500 inline-block">3</span>
+            <span className=" inline-block">1</span>
+            <span className=" inline-block">2</span>
+            <span className=" inline-block">3</span>
           </div>
-          <div className="bg-black h-[1.6rem] w-[4.8rem] rounded-full flex items-center px-[0.4rem]">
+          <div
+            onClick={() => {
+              send();
+            }}
+            className={`btnPanel-${theme} toggleBtn-${theme} h-[1.8rem] w-[4.8rem] rounded-full flex 
+            items-center px-[0.4rem] hover:cursor-pointer`}
+          >
             <div
               id="toggle_btn"
-              className={`switchBtn-${theme}  w-[1.1rem] h-[1.1rem] rounded-full`}
+              className={`switchBtn-${theme}  w-[1rem] h-[1rem] rounded-full`}
             ></div>
           </div>
         </div>
