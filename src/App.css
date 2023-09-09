@@ -79,3 +79,129 @@ body {
   --textEqualBtn-3: hsl(198, 20%, 13%);
 }
 /*=======================================================================================*/
+/* body class */
+/*=======================================================================================*/
+.bodyColor-1 {
+  background-color: var(--bodyColor-1);
+}
+
+.bodyColor-2 {
+  background-color: var(--bodyColor-2);
+}
+
+.bodyColor-3 {
+  background-color: var(--bodyColor-3);
+}
+
+/*=======================================================================================*/
+/* btnPanel classes */
+/*=======================================================================================*/
+
+.btnPanel-1 {
+  background-color: var(--btnPanel-1);
+}
+
+.btnPanel-2 {
+  background-color: var(--btnPanel-2);
+}
+
+.btnPanel-3 {
+  background-color: var(--btnPanel-3);
+}
+/*=======================================================================================*/
+/* resultPanel classes */
+/*=======================================================================================*/
+
+.resultPanel-1 {
+  background-color: var(--resultPanel-1);
+}
+
+.resultPanel-2 {
+  background-color: var(--resultPanel-2);
+}
+
+.resultPanel-3 {
+  background-color: var(--resultPanel-3);
+}
+
+/*=======================================================================================*/
+/* operatorBtn */
+/*=======================================================================================*/
+
+.operatorBtn-1 {
+  background-color: var(--operatorBtn-1);
+  box-shadow: 0px 4px 2px 0px var(--operatorBtn--shadow-1);
+  color: var(--textBtn-1);
+}
+
+.operatorBtn-2 {
+  background-color: var(--operatorBtn-2);
+  box-shadow: 0px 4px 2px 0px var(--operatorBtn--shadow-2);
+  color: var(--textBtn-2);
+}
+
+.operatorBtn-3 {
+  background-color: var(--operatorBtn-3);
+  box-shadow: 0px 4px 2px 0px var(--operatorBtn--shadow-3);
+  color: var(--textBtn-3);
+}
+
+/*=======================================================================================*/
+/* functionalBtn classes */
+/*=======================================================================================*/
+
+.functionalBtn-1 {
+  background-color: var(--functionalBtn-1);
+  box-shadow: 0px 4px 2px 0px var(--functionalBtn--shadow-1);
+  color: var(--text-1);
+}
+
+.functionalBtn-2 {
+  background-color: var(--functionalBtn-2);
+  box-shadow: 0px 4px 2px 0px var(--functionalBtn--shadow-2);
+  color: var(--text-2);
+}
+
+.functionalBtn-3 {
+  background-color: var(--functionalBtn-3);
+  box-shadow: 0px 4px 2px 0px var(--functionalBtn--shadow-3);
+  color: var(--text-3);
+}
+
+/*=======================================================================================*/
+/* switchBtn classes */
+/*=======================================================================================*/
+
+.switchBtn-1 {
+  background-color: var(--switchBtn-1);
+  box-shadow: 0px 4px 2px 0px var(--switchBtn--shadow-1);
+  color: var(--textEqualBtn-1);
+}
+
+.switchBtn-2 {
+  background-color: var(--switchBtn-2);
+  box-shadow: 0px 4px 2px 0px var(--switchBtn--shadow-2);
+  color: var(--textEqualBtn-2);
+}
+
+.switchBtn-3 {
+  background-color: var(--switchBtn-3);
+  box-shadow: 0px 4px 2px 0px var(--switchBtn--shadow-3);
+  color: var(--textEqualBtn-3);
+}
+
+/*=======================================================================================*/
+/* control panel colors classes */
+/*=======================================================================================*/
+
+.text-1 {
+  color: var(--text-1);
+}
+
+.text-2 {
+  color: var(--text-2);
+}
+
+.text-3 {
+  color: var(--text-3);
+}
