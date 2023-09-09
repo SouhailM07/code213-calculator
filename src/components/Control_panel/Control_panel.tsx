@@ -15,7 +15,7 @@ export default function Control_panel() {
             <span className=" bg-yellow-500 inline-block">3</span>
           </div>
           <div className="bg-black h-[1.6rem] w-[4.5rem] rounded-full flex items-center p-1">
-            <div className="bg-red-600 w-[1rem] h-[1rem] rounded-full"></div>
+            <div className="bg-red-600 w-[1.1rem] h-[1.1rem] rounded-full"></div>
           </div>
         </div>
       </div>

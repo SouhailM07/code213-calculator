@@ -6,4 +6,37 @@ body {
   height: 100vh;
   display: grid;
   place-items: center;
+  /* background-color: hsl(222, 26%, 31%); main body */
+  /* background-color: hsl(223, 31%, 20%); btn panel  */
+  /* background-color: hsl(224, 36%, 15%); screen*/
 }
+
+/*=======================================================================================*/
+/* themes */
+/*=======================================================================================*/
+:root {
+  /*=======================================================================================*/
+  /* theme 1 */
+  /*=======================================================================================*/
+  /* !background */
+  --bodyColor-1: hsl(222, 26%, 31%);
+  --btnPanel-1: hsl(223, 31%, 20%);
+  --resultPanel-1: hsl(224, 36%, 15%);
+  /* ! Btn */
+  --operatorBtn-1: hsl(30, 25%, 89%);
+  --operatorBtn--shadow-1: hsl(30, 25%, 89%);
+  /* --operatorBtn--hover-1: ; */
+  --functionalBtn-1: hsl(225, 21%, 49%);
+  --functionalBtn--shadow-1: hsl(224, 28%, 35%);
+  /* --functionalBtn--hover-1: ; */
+  --switchBtn-1: hsl(6, 63%, 50%);
+  --switchBtn--shadow-1: hsl(6, 70%, 34%);
+  /* --switchBtn--hover-1: ; */
+  /* ! text */
+  --text-1: hsl(0, 0%, 100%);
+  --textBtn-1: hsl(221, 14%, 31%);
+}
+body {
+  background-color: hsl(28, 16%, 65%);
+}
+/*=======================================================================================*/
