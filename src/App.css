@@ -24,7 +24,7 @@ body {
   --resultPanel-1: hsl(224, 36%, 15%);
   /* ! Btn */
   --operatorBtn-1: hsl(30, 25%, 89%);
-  --operatorBtn--shadow-1: hsl(30, 25%, 89%);
+  --operatorBtn--shadow-1: hsl(28, 16%, 65%);
   /* --operatorBtn--hover-1: ; */
   --functionalBtn-1: hsl(225, 21%, 49%);
   --functionalBtn--shadow-1: hsl(224, 28%, 35%);
@@ -40,8 +40,27 @@ body {
   /*=======================================================================================*/
   /* theme 2 */
   /*=======================================================================================*/
+  /* !background */
+  --bodyColor-2: hsl(0, 0%, 90%);
+  --btnPanel-2: hsl(0, 5%, 81%);
+  --resultPanel-2: hsl(0, 0%, 93%);
+  /* ! Btn */
+  --operatorBtn-2: hsl(45, 7%, 89%);
+  --operatorBtn--shadow-2: hsl(35, 11%, 61%);
+  /* --operatorBtn--hover-2: ; */
+  --functionalBtn-2: hsl(185, 42%, 37%);
+  --functionalBtn--shadow-2: hsl(185, 58%, 25%);
+  /* --functionalBtn--hover-2: ; */
+  --switchBtn-2: hsl(25, 98%, 40%);
+  --switchBtn--shadow-2: hsl(25, 99%, 27%);
+  /* --switchBtn--hover-2: ; */
+  /* ! text */
+  --text-2: hsl(60, 10%, 19%);
+  --textBtn-2: hsl(60, 10%, 19%);
+  --textFunctionalBtn-2: hsl(0, 0%, 100%);
+  --textEqualBtn-2: hsl(0, 0%, 100%);
 }
 body {
-  background-color: hsl(28, 16%, 65%);
+  background-color: hsl(60, 10%, 19%);
 }
 /*=======================================================================================*/
