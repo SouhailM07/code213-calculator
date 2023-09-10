@@ -2,6 +2,9 @@ html {
   font-size: 62.5%;
 }
 
+* {
+}
+
 body {
   height: 100vh;
   font-family: "League spartan";
@@ -13,6 +16,7 @@ body {
 /* themes */
 /*=======================================================================================*/
 :root {
+  --time: 0.4s;
   /*=======================================================================================*/
   /* theme 1 */
   /*=======================================================================================*/
@@ -85,14 +89,17 @@ body {
 /*=======================================================================================*/
 .bodyColor-1 {
   background-color: var(--bodyColor-1);
+  transition: var(--time);
 }
 
 .bodyColor-2 {
   background-color: var(--bodyColor-2);
+  transition: var(--time);
 }
 
 .bodyColor-3 {
   background-color: var(--bodyColor-3);
+  transition: var(--time);
 }
 
 /*=======================================================================================*/
@@ -101,14 +108,17 @@ body {
 
 .btnPanel-1 {
   background-color: var(--btnPanel-1);
+  transition: var(--time);
 }
 
 .btnPanel-2 {
   background-color: var(--btnPanel-2);
+  transition: var(--time);
 }
 
 .btnPanel-3 {
   background-color: var(--btnPanel-3);
+  transition: var(--time);
 }
 /*=======================================================================================*/
 /* resultPanel classes */
@@ -116,14 +126,17 @@ body {
 
 .resultPanel-1 {
   background-color: var(--resultPanel-1);
+  transition: var(--time);
 }
 
 .resultPanel-2 {
   background-color: var(--resultPanel-2);
+  transition: var(--time);
 }
 
 .resultPanel-3 {
   background-color: var(--resultPanel-3);
+  transition: var(--time);
 }
 
 /*=======================================================================================*/
@@ -134,18 +147,21 @@ body {
   background-color: var(--operatorBtn-1);
   box-shadow: 0px 4px 2px 0px var(--operatorBtn--shadow-1);
   color: var(--textBtn-1);
+  transition: var(--time);
 }
 
 .operatorBtn-2 {
   background-color: var(--operatorBtn-2);
   box-shadow: 0px 4px 2px 0px var(--operatorBtn--shadow-2);
   color: var(--textBtn-2);
+  transition: var(--time);
 }
 
 .operatorBtn-3 {
   background-color: var(--operatorBtn-3);
   box-shadow: 0px 4px 2px 0px var(--operatorBtn--shadow-3);
   color: var(--textBtn-3);
+  transition: var(--time);
 }
 
 /*=======================================================================================*/
@@ -156,18 +172,21 @@ body {
   background-color: var(--functionalBtn-1);
   box-shadow: 0px 4px 2px 0px var(--functionalBtn--shadow-1);
   color: var(--text-1);
+  transition: var(--time);
 }
 
 .functionalBtn-2 {
   background-color: var(--functionalBtn-2);
   box-shadow: 0px 4px 2px 0px var(--functionalBtn--shadow-2);
   color: var(--text-2);
+  transition: var(--time);
 }
 
 .functionalBtn-3 {
   background-color: var(--functionalBtn-3);
   box-shadow: 0px 4px 2px 0px var(--functionalBtn--shadow-3);
   color: var(--text-3);
+  transition: var(--time);
 }
 
 /*=======================================================================================*/
@@ -177,18 +196,21 @@ body {
 .switchBtn-1 {
   background-color: var(--switchBtn-1);
   box-shadow: 0px 4px 2px 0px var(--switchBtn--shadow-1);
+  transition: var(--time);
   color: var(--textEqualBtn-1);
 }
 
 .switchBtn-2 {
   background-color: var(--switchBtn-2);
   box-shadow: 0px 4px 2px 0px var(--switchBtn--shadow-2);
+  transition: var(--time);
   color: var(--textEqualBtn-2);
 }
 
 .switchBtn-3 {
   background-color: var(--switchBtn-3);
   box-shadow: 0px 4px 2px 0px var(--switchBtn--shadow-3);
+  transition: var(--time);
   color: var(--textEqualBtn-3);
 }
 
@@ -197,14 +219,17 @@ body {
 /*=======================================================================================*/
 
 .text-1 {
+  transition: var(--time);
   color: var(--text-1);
 }
 
 .text-2 {
+  transition: var(--time);
   color: var(--text-2);
 }
 
 .text-3 {
+  transition: var(--time);
   color: var(--text-3);
 }
 
@@ -214,12 +239,15 @@ body {
 
 .toggleBtn-1 {
   padding-left: 5px;
+  transition: var(--time);
 }
 
 .toggleBtn-2 {
   padding-left: 25px;
+  transition: var(--time);
 }
 
 .toggleBtn-3 {
   padding-left: 46px;
+  transition: var(--time);
 }

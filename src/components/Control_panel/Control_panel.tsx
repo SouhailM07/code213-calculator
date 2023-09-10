@@ -1,5 +1,5 @@
 import "./control_panel.css";
-export default function Control_panel({ theme, send }) {
+export default function Control_panel({ theme, toggle }) {
   return (
     <div
       id="control-panel"
@@ -21,7 +21,7 @@ export default function Control_panel({ theme, send }) {
           </div>
           <div
             onClick={() => {
-              send();
+              toggle();
             }}
             className={`btnPanel-${theme} toggleBtn-${theme} h-[1.8rem] w-[4.8rem] rounded-full flex 
             items-center px-[0.4rem] hover:cursor-pointer`}

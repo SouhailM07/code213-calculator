@@ -15,7 +15,7 @@ function App() {
       <div className=" w-[40rem] flex flex-col justify-between h-[46.5rem]">
         <Control_panel
           theme={counter}
-          send={() => {
+          toggle={() => {
             if (counter == 1 && !direction) setCounter(++counter);
             else if (counter == 2 && !direction) setCounter(++counter);
             else if (counter == 3 && !direction) {
