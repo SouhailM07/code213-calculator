@@ -6,7 +6,7 @@ export default function Btn_panel(props) {
     <>
       <div
         id="btn_panel"
-        className={` px-5 py-4 rounded-xl h-[30rem] flex flex-wrap justify-evenly btnPanel-${props.theme}`}
+        className={` rounded-xl h-[30rem]   btnPanel-${props.theme}`}
       >
         <Btn
           content="7"

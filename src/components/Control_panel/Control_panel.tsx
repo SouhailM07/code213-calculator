@@ -3,7 +3,7 @@ export default function Control_panel({ theme, toggle }) {
   return (
     <div
       id="control-panel"
-      className=" flex justify-between items-center h-[4.2rem] "
+      className=" flex justify-between items-center h-[4.2rem] mb-6 mt-11"
     >
       <h2 className={`text-${theme} text-[2.3rem] pt-2 `}>calc</h2>
       <div

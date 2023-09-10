@@ -4,9 +4,7 @@ export default function Btn({ action, content, id, theme }) {
     <>
       <button
         id={id}
-        onClick={() => {
-          action();
-        }}
+        onClick={() => {}}
         className={`font-bold m-3 h-[3.8rem] w-[7rem] rounded-xl  text-[2.2rem] ${theme}`}
       >
         {content}

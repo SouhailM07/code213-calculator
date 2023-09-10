@@ -12,7 +12,10 @@ function App() {
   body.className = `bodyColor-${counter}`;
   return (
     <>
-      <div className=" w-[40rem] flex flex-col justify-between h-[46.5rem]">
+      <div
+        id="container"
+        className=" w-[38rem] flex flex-col justify-between  h-auto "
+      >
         <Control_panel
           theme={counter}
           toggle={() => {

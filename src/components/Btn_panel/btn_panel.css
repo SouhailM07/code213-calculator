@@ -1,8 +1,9 @@
 #btn_panel {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 23%);
+  grid-template-rows: repeat(4, 19%);
   place-items: center;
+  place-content: center;
 }
 #btn_panel #resetBtn {
   grid-area: 5/1/5/3;
@@ -11,4 +12,28 @@
 #btn_panel #equalBtn {
   width: 84%;
   grid-area: 5/3/5/5;
+}
+
+@media screen and (max-width: 580px) {
+  body {
+    align-items: normal;
+  }
+  #btn_panel {
+    height: 103vw;
+    grid-template-columns: repeat(4, 19.5vw);
+    grid-template-rows: repeat(4, 19.5vw);
+  }
+  button {
+    height: 15vw !important;
+    width: 15vw !important;
+  }
+  #resetBtn,
+  #equalBtn {
+    width: 34vw !important;
+  }
+  button,
+  #resetBtn,
+  #equalBtn {
+    border-radius: 4px !important;
+  }
 }
