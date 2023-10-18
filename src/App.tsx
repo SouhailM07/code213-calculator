@@ -2,37 +2,21 @@ import "./style/input.css";
 import "./App.css";
 // components
 import { Control_panel, Result_panel, Btn_panel } from "./components";
-// hooks
-import { useState } from "react";
+// !redux
+import { useSelector } from "react-redux";
 //
 let body = document.body as HTMLBodyElement;
+
 function App() {
-  let [counter, setCounter] = useState(1);
-  let [direction, setDirection] = useState(false);
-  body.className = `bodyColor-${counter}`;
+  let theme = useSelector((state: any) => state.themes.theme);
+  //
+  body.className = `bodyColor-${theme}`;
   return (
     <>
-      <div
-        id="container"
-        className=" w-[38rem] flex flex-col justify-between  h-auto "
-      >
-        <Control_panel
-          theme={counter}
-          toggle={() => {
-            if (counter == 1 && !direction) setCounter(++counter);
-            else if (counter == 2 && !direction) setCounter(++counter);
-            else if (counter == 3 && !direction) {
-              setCounter(--counter);
-              setDirection(!direction);
-            } else if (counter === 2 && direction) setCounter(--counter);
-            else if (counter === 1 && direction) {
-              setCounter(++counter);
-              setDirection(!direction);
-            }
-          }}
-        />
-        <Result_panel theme={counter} />
-        <Btn_panel theme={counter} />
+      <div id="container" className=" w-[38rem] flex flex-col justify-between ">
+        <Control_panel />
+        <Result_panel />
+        <Btn_panel />
       </div>
     </>
   );

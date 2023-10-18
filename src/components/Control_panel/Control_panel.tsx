@@ -1,9 +1,21 @@
 import "./control_panel.css";
-export default function Control_panel({ theme, toggle }) {
+// !redux
+import { useDispatch, useSelector } from "react-redux";
+import { toggleTheme } from "./themeSlicer";
+//
+import switchSound from "../../sounds/switchSound.wav";
+
+export default function Control_panel() {
+  // !redux
+  let theme = useSelector((state: any) => state.themes.theme);
+  let dispatch = useDispatch();
+  // audio element
+  let audioElement = document.createElement("audio");
+  audioElement.src = switchSound;
   return (
     <div
       id="control-panel"
-      className=" flex justify-between items-center h-[4.2rem] mb-6 mt-11"
+      className=" flex justify-between items-center h-[4.2rem] mb-6"
     >
       <h2 className={`text-${theme} text-[2.3rem] pt-2 `}>calc</h2>
       <div
@@ -21,14 +33,15 @@ export default function Control_panel({ theme, toggle }) {
           </div>
           <div
             onClick={() => {
-              toggle();
+              audioElement.play();
+              dispatch(toggleTheme());
             }}
             className={`btnPanel-${theme} toggleBtn-${theme} h-[1.8rem] w-[4.8rem] rounded-full flex 
             items-center px-[0.4rem] hover:cursor-pointer`}
           >
             <div
               id="toggle_btn"
-              className={`switchBtn-${theme}  w-[1rem] h-[1rem] rounded-full`}
+              className={`switchBtn-${theme} w-[1rem] h-[1rem] rounded-full`}
             ></div>
           </div>
         </div>
